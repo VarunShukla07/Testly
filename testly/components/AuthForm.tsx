@@ -33,7 +33,7 @@
          },
      })
  
-     async function onSubmit(_values: z.infer<typeof formSchema>) {
+     async function onSubmit(values: z.infer<typeof formSchema>) {
          try {
              if(type === 'sign-up') {
                  toast.success('Account created successfully. Please sign in.');
